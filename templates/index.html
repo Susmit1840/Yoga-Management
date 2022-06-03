@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ </head>
+ <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: poppins;
+      }
+      
+      body{
+        background-color: #E8EDF2;
+      }
+      
+      div.login-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      
+        background-color: white;
+        padding: 30px;
+        box-shadow: 0 50px 50px -50px darkslategray;
+      }
+      
+      div.login-box div.myform{
+        width: 270px;
+        margin-right: 30px;
+      }
+      
+      div.login-box div.myform h2{
+        color: #1c1c1e;
+        margin-bottom: 20px;
+      }
+      
+      div.login-box div.myform input{
+        border: none;
+        outline: none;
+        border-radius: 0;
+        width: 100%;
+        border-bottom: 2px solid #1c1c1e;
+        margin-bottom: 25px;
+        padding: 7px 0;
+        font-size: 14px;
+      }
+      div.login-box div.myform button{
+        color: white;
+        background-color: #1c1c1e;
+        border: none;
+        outline: none;
+        border-radius: 2px;
+        font-size: 14px;
+        padding: 5px 12px;
+        font-weight: 500;
+      }
+      div.login-box div.image img{
+        width: 300px;
+      }
+ </style>
+ <body>
+  <div class="login-box" >
+ 
+  <div class="myform">
+   <form class="form-group" action="{{ url_for('login') }}" method="post">
+    <h2>LOGIN</h2>
+    <label>Username</label>
+    <input type="text" class="form-control" name="username" placeholder="Username" id="username" required>
+    <label>Password</label>
+    <input type="password" class="form-control" name="password" placeholder="Password" id="password" required>
+    
+    <input type="submit" value="Login" class="form-control btn btn-success " name="">
+   </form>
+   <div id="msg">{{ msg }}</div>
+   <p>No account <a href="{{ url_for('register') }}">Register</a></p>
+  </div>
+  <div class="image">
+    <img src="static\Icon.jpeg" class="profile_image" alt="" style="width: 400px; height:400px">
+  </div>
+ </div>
+</body>
+</html>
+?

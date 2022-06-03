@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal_detail_Page</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<style>
+    *{
+        margin: 0px ;
+        padding: 0;
+        list-style:none;
+        text-decoration: none;
+        font-family:'Times New Roman', Times, serif;
+    }
+    body{
+        
+        background-color:rgb(224, 223, 250);
+    }
+    .top_navbar{
+        box-sizing:border-box;
+        border-top:1px solid rgba(87, 85, 85, 0.1);
+        border-bottom:1px solid rgba(87, 85, 85, 0.1);
+        height:45px;
+        background:#040130; 
+    }
+    .top_navbar a{
+        padding:5px;
+        text-decoration:none;
+        float:right;
+        margin-top:3px;
+        margin-right:10px;
+        border-radius:2px;
+        font-size:15px;
+        color:black;
+    }
+    .wrapper{
+        display:flex;
+       line-height:30px;
+       position:relative;
+       background: rgba(255,255,255,.2);
+    
+    }
+    .wrapper .top_navbar{
+        width: 100%;
+        margin-left: 200px;
+    }
+    .sidebar{
+        position: fixed;
+        left:0;
+        width:230px;
+        height:100%;
+        background:#040130; 
+    }
+    .sidebar .profile_image{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        margin-bottom:10px;
+        margin-top:20px;
+    }
+    .sidebar h3{
+        color:whitesmoke;
+    }
+    .sidebar ul a{
+        display:block;
+        height:100%;
+        width:100%;
+        line-height:50px;
+        font-size:15px;
+        color:white;
+        padding-left:30px;
+        box-sizing:border-box;
+        border-top:1px solid rgba(255,255,255,.1);
+        border-bottom:1px solid black;
+        transition: .4s;
+    }
+    .sidebar ul li:hover a{
+        padding-left:50px;
+    }
+    select{
+        margin-left:300px;
+    }
+    div.title{
+        font-family:Lucida Sans;
+        margin-top:0px;
+        height:35px;
+        width:100%;
+        font-size:20px;
+        padding-top:3px;
+        padding-left:10px;
+        line-height:10px;
+        box-sizing:border-box;
+        border-bottom:1px solid rgb(185, 179, 179);
+        transition: .4s;
+        background-color:rgb(139, 148, 243);
+        color:#040130;
+   
+    }
+    table{
+        border-collapse: collapse;
+        margin-left:330px;
+        margin-top:25px;
+    }
+   
+    tr{
+        border-bottom: 1px solid #dddddd ;
+    }
+
+    tr:nth-of-type(Odd) {
+  background-color: rgb(208, 211, 250);
+}
+    table th,td{
+        padding: 1px 150px 3px 6px;
+        border:1px solid rgb(180, 176, 176);
+        text-align:center;
+    }
+    div.content{
+        font-family:'Lucida Sans';
+        font-size:18px;
+        font-style: normal;
+        color:#2c2c2c;
+        border-collapse: collapse;
+        border: 1px solid rgb(180, 176, 176);
+        margin-top: 90px;
+        margin-right: 20px;
+        margin-left: 60px;
+        
+        padding-top: 0px;
+        border-radius: 0px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+       padding: 20px;
+       background-color: rgb(248, 246, 244);
+    }
+    
+    input[type=submit] {
+        margin-left:300px;
+        margin-top:10px;
+        padding:5px 20px; 
+        border:0 none;
+        cursor:pointer;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        border:1px solid black;  
+        font-size:15px; 
+}
+input[name=name]{
+    margin-left:100px;
+}  
+input[name=dob]{
+    margin-left:52px;
+}  
+input[name=gender]{
+    margin-left:91px;
+}  
+input[name=phoneno]{
+    margin-left:40px;
+}  
+input[name=address]{
+    margin-left:86px;
+}  
+input[name=emailid]{
+    margin-left:85px;
+}  
+input[name=department]{
+    margin-left:63px;
+}  
+input[name=year]{
+    margin-left:115px;
+}  
+input[name=semester]{
+    margin-left:83px;
+}    
+
+    
+    
+</style>
+<body>
+   <div class="wrapper">
+     <div class="sidebar">
+        <center>
+            <img src="static\pce.png" class="profile_image" alt="">
+           
+            <h3> {{ username }}</h3>
+        </center><br>
+        <ul>
+            <li><a href="/home"><i class="fas fa-home">  Home</i></a></li>
+            <li><a href="/personal"><i class="fas fa-address-card">  Personal Details</i></a></li>
+            <li><a href="/exam"><i class="fas fa-edit">  Exam form</i></a></li>
+            <li><a href="/result"><i class="fas fa-file-alt">  Result</i></a></li>
+        </ul>
+    </div>
+    <div class="top_navbar">
+        
+    <div class="content">
+        <div class="title">
+            <i class="	far fa-edit"><b> /PERSONAL DETAILS</b></i>
+        </div>
+            <br>
+   
+        <table border="1" >
+            <tr>
+                
+                <th>Personal Details :-</th></tr>
+                <h4>
+                    Personal Details already registered</h4>
+            <tr><td>
+           
+        </table>
+       
+    
+    
+
+</div>
+
+
+</div>
+  
+    </div>
+    
+</body>
+</html>
